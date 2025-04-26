@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useEffect, useRef, useState } from "react"
@@ -15,6 +16,8 @@ interface ResultsDisplayProps {
   isAnalyzing: boolean
   reviewText: string
 }
+const isLocalhost = typeof window !== 'undefined' && window.location.hostname === 'localhost';
+const API_URL = isLocalhost ? 'http://localhost:8000' : '';
 
 export default function ResultsDisplay({ 
   results, 
@@ -76,7 +79,7 @@ export default function ResultsDisplay({
   const handleFeedbackSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
     try {
-      const response = await fetch("http://localhost:8000/api/feedback", {
+      const response = await fetch(`${API_URL}/api/feedback`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

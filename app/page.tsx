@@ -8,8 +8,18 @@ import { Analytics } from "@/components/analytics"
 import Footer from "@/components/footer"
 
 
+const isLocalhost = typeof window !== 'undefined' && window.location.hostname === 'localhost';
+const API_URL = isLocalhost ? 'http://localhost:8000' : '';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+// fetch(`${baseUrl}/api/analyze`, {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+//   body: JSON.stringify({ prompt }),
+// });
+
+// const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
 export default function Home() {
   const [reviewText, setReviewText] = useState("")
