@@ -117,7 +117,7 @@ export default function Home() {
                       className="w-14 h-14 drop-shadow-lg rounded-xl"
                     />
                     <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-                      REVIEW RADAR
+                      REVIEWbullfuck
                     </h1>
                   </div>
 
