@@ -41,8 +41,8 @@ app.add_middleware(
 #     api_key=os.getenv("OPENAI_API_KEY", "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"),
 # )
 client = OpenAI(
-    base_url=os.getenv("OPENAI_BASE_URL", "https://models.inference.ai.azure.com"),
-    api_key=os.getenv("OPENAI_API_KEY", "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")#, "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"
+    base_url=os.getenv("OPENAI_BASE_URL"),#, "https://models.inference.ai.azure.com"),
+    api_key=os.getenv("OPENAI_API_KEY")#, "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")#, "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"
 )
 class ReviewRequest(BaseModel):
     review_text: str
