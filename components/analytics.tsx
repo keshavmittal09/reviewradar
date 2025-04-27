@@ -319,8 +319,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import React, { useEffect, useState } from 'react';
 
 
-const isLocalhost = typeof window !== 'undefined' && window.location.hostname === 'localhost';
-const API_URL = isLocalhost ? 'http://localhost:8000' : '';
+// const isLocalhost = typeof window !== 'undefined' && window.location.hostname === 'localhost';
+// const API_URL = isLocalhost ? 'http://localhost:8000' : '';
+const API_URL = "https://backenrr-production.up.railway.app"
+
 export function Analytics() {
   const [number, setNumber] = useState<number | null>(null);
   const [fake_num, setfNumber] = useState<number | null>(null);
