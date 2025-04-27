@@ -16,8 +16,10 @@ interface ResultsDisplayProps {
   isAnalyzing: boolean
   reviewText: string
 }
-const isLocalhost = typeof window !== 'undefined' && window.location.hostname === 'localhost';
-const API_URL = isLocalhost ? 'http://localhost:8000' : '';
+// const isLocalhost = typeof window !== 'undefined' && window.location.hostname === 'localhost';
+// const API_URL = isLocalhost ? 'http://localhost:8000' : '';
+const API_URL = "https://backenrr-production.up.railway.app"
+
 
 export default function ResultsDisplay({ 
   results, 
