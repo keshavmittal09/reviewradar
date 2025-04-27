@@ -2179,8 +2179,10 @@ export default function Footer() {
     e.preventDefault();
     const emailInput = (e.target as HTMLFormElement).elements.namedItem("email") as HTMLInputElement;
     const emailValue = emailInput.value; // Extract the value from the input field
-    const isLocalhost = typeof window !== 'undefined' && window.location.hostname === 'localhost';
-    const API_URL = isLocalhost ? 'http://localhost:8000' : '';
+    // const isLocalhost = typeof window !== 'undefined' && window.location.hostname === 'localhost';
+    // const API_URL = isLocalhost ? 'http://localhost:8000' : '';
+    const API_URL = "https://backenrr-production.up.railway.app"
+
     try {
       const response = await fetch(`${API_URL}/api/subscribe`, {
         method: "POST",
