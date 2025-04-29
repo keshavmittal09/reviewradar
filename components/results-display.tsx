@@ -18,7 +18,7 @@ interface ResultsDisplayProps {
 }
 // const isLocalhost = typeof window !== 'undefined' && window.location.hostname === 'localhost';
 // const API_URL = isLocalhost ? 'http://localhost:8000' : '';
-const API_URL = "https://backenrr-production.up.railway.app"
+const API_URL = "https://backen-rr.onrender.com"
 
 
 export default function ResultsDisplay({ 
